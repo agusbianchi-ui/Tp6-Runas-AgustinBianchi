@@ -1,0 +1,391 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Georgia', serif;
+  background-color: #0f0a05;
+  color: #d4b38a;
+  line-height: 1.6;
+}
+
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 40px;
+  background-color: rgba(30, 20, 10, 0.95);
+  border-bottom: 4px solid #8b5a2b;
+}
+
+.header__logo {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.header__logo img {
+  height: 80px;
+}
+
+.header__logo h1 {
+  font-size: 2.2rem;
+  color: #f4d9a8;
+}
+
+.header__house {
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: #c9a06b;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+}
+
+
+main {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 40px 20px;
+}
+
+.bloque {
+  display: flex;
+  gap: 40px;
+  margin-bottom: 80px;
+  flex-wrap: wrap;
+}
+
+
+.teoria {
+  flex: 1;
+  min-width: 300px;
+  max-width: 380px;
+  background-color: rgba(40, 30, 20, 0.9);
+  padding: 30px;
+  border: 3px solid #8b5a2b;
+  border-radius: 8px;
+  position: relative;
+}
+
+.numero {
+  position: absolute;
+  top: -25px;
+  left: 25px;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: white;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.5);
+}
+
+.azul    { background-color: #3b7eb3; }
+.verde   { background-color: #4a8c4a; }
+.violeta { background-color: #8b4a9e; }
+
+.teoria h2 {
+  font-size: 2.6rem;
+  text-align: center;
+  margin-bottom: 15px;
+  color: #f4d9a8;
+}
+
+.teoria hr {
+  border: 2px solid #8b5a2b;
+  margin: 15px 0;
+}
+
+.teoria p {
+  margin-bottom: 12px;
+}
+
+.teoria h3 {
+  color: #c9a06b;
+  margin: 20px 0 10px;
+}
+
+.etiquetas {
+  list-style: none;
+}
+
+.etiquetas li {
+  background-color: rgba(139, 90, 43, 0.3);
+  padding: 8px 14px;
+  margin: 6px 0;
+  border-radius: 4px;
+  font-family: monospace;
+}
+
+/*TARJETA POSITION*/
+.position-card {
+  position: relative;
+  width: 100%;
+  max-width: 680px;
+  min-height: 720px;
+  background: linear-gradient(#3c2a1f, #2c2118);
+  border: 6px solid #d4b38a;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 15px 35px rgba(0,0,0,0.5);
+}
+
+.position-card img {
+  width: 100%;
+  height: 280px;
+  object-fit: contain;
+  display: block;
+}
+
+.position-card .badge {
+  position: absolute;
+  top: 18px;
+  right: 18px;
+  background-color: #8b5a2b;
+  color: #f4d9a8;
+  padding: 10px 20px;
+  border: 3px solid #d4b38a;
+  font-weight: bold;
+  font-size: 1.05rem;
+  transform: rotate(8deg);
+  z-index: 10;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.4);
+}
+
+.position-card .contenido {
+  position: relative;
+  padding: 25px 28px;
+}
+
+.position-card header h2 {
+  font-size: 1.85rem;
+  color: #f4d9a8;
+  margin-bottom: 4px;
+}
+
+.position-card header p {
+  color: #c9a06b;
+  margin-bottom: 14px;
+  font-style: italic;
+}
+
+.position-card .stats {
+  position: relative;
+  margin: 22px 0;
+  padding: 16px 8px;
+  background-color: rgba(139, 90, 43, 0.25);
+  border: 2px solid #8b5a2b;
+  border-radius: 8px;
+  text-align: center;
+}
+
+.position-card .stats div {
+  display: inline-block;
+  width: 22%;
+  vertical-align: top;
+}
+
+.position-card .stats h4 {
+  font-size: 0.9rem;
+  color: #c9a06b;
+  margin-bottom: 3px;
+}
+
+.position-card .habilidad {
+  position: relative;
+  margin-top: 18px;
+  padding-top: 14px;
+  border-top: 2px solid #8b5a2b;
+}
+
+/*TARJETA FLEXBOX*/
+.flex-card {
+  display: flex;
+  flex-direction: row;      
+  width: 100%;
+  max-width: 700px;
+  min-height: 420px;
+  background: linear-gradient(#3c2a1f, #2c2118);
+  border: 6px solid #d4b38a;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 15px 35px rgba(0,0,0,0.5);
+}
+
+.flex-card img {
+  width: 240px;
+  min-width: 240px;
+  height: auto;
+  object-fit: contain;
+  flex-shrink: 0;
+}
+
+.flex-card .contenido {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  padding: 22px 24px;
+  gap: 14px;
+  justify-content: space-between;
+}
+
+.flex-card header h2 {
+  font-size: 1.7rem;
+  color: #f4d9a8;
+  margin-bottom: 2px;
+}
+
+.flex-card header p {
+  color: #c9a06b;
+  font-style: italic;
+  font-size: 0.95rem;
+}
+
+.flex-card .stats {
+  display: flex;
+  gap: 10px;
+  justify-content: space-between;
+}
+
+.flex-card .stats > div {
+  flex: 1;
+  text-align: center;
+  background-color: rgba(139, 90, 43, 0.2);
+  padding: 10px 4px;
+  border-radius: 6px;
+  border: 1px solid #8b5a2b;
+}
+
+.flex-card .stats h4 {
+  font-size: 0.85rem;
+  color: #c9a06b;
+  margin-bottom: 2px;
+}
+
+.flex-card .habilidad {
+  margin-top: 8px;
+}
+
+/*TARJETA GRID*/
+.grid-card {
+  display: grid;
+  grid-template-columns: 200px 1fr 1fr;
+  grid-template-rows: auto 1fr auto;
+  gap: 16px;
+  padding: 22px;
+  width: 100%;
+  max-width: 720px;
+  min-height: 480px;
+  background: linear-gradient(#3c2a1f, #2c2118);
+  border: 6px solid #d4b38a;
+  border-radius: 12px;
+  box-shadow: 0 15px 35px rgba(0,0,0,0.5);
+}
+
+
+.grid-card .titulo {
+  grid-column: 1 / -1;
+  grid-row: 1;
+  text-align: center;
+  border-bottom: 3px solid #8b5a2b;
+  padding-bottom: 12px;
+}
+
+.grid-card .titulo h2 {
+  font-size: 1.75rem;
+  color: #f4d9a8;
+  margin-bottom: 3px;
+}
+
+.grid-card .titulo p {
+  color: #c9a06b;
+  font-style: italic;
+}
+
+.grid-card img {
+  grid-column: 1;
+  grid-row: 2;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 8px;
+  border: 3px solid #8b5a2b;
+}
+
+.grid-card .descripcion {
+  grid-column: 2;
+  grid-row: 2;
+  padding: 8px;
+}
+
+
+.grid-card .estadisticas {
+  grid-column: 3;
+  grid-row: 2;
+  background-color: rgba(139, 90, 43, 0.2);
+  padding: 14px;
+  border-radius: 6px;
+  border: 2px solid #8b5a2b;
+}
+
+
+.grid-card .habilidades-grid {
+  grid-column: 1 / 3;
+  grid-row: 3;
+  background-color: rgba(139, 90, 43, 0.2);
+  padding: 14px;
+  border-radius: 6px;
+  border: 2px solid #8b5a2b;
+}
+
+
+.grid-card .info {
+  grid-column: 3;
+  grid-row: 3;
+  background-color: rgba(139, 90, 43, 0.25);
+  padding: 14px;
+  border-radius: 6px;
+  border: 2px solid #8b5a2b;
+}
+
+.grid-card h3 {
+  color: #c9a06b;
+  margin-bottom: 8px;
+  font-size: 1.05rem;
+}
+
+.grid-card ul {
+  list-style: none;
+}
+
+.grid-card ul li {
+  margin-bottom: 4px;
+}
+
+
+footer {
+  text-align: center;
+  padding: 30px;
+  background-color: rgba(30, 20, 10, 0.95);
+  border-top: 4px solid #8b5a2b;
+  color: #a88a5e;
+  font-size: 1.1rem;
+}
+
+
+.card:hover {
+  transform: translateY(-6px);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: 0 20px 40px rgba(0,0,0,0.6);
+}
+
+h1, h2, h3, h4 {
+  text-shadow: 1px 1px 3px rgba(0,0,0,0.7);
+}
