@@ -1,0 +1,331 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Manual de las Runas de Estilo</title>
+
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+
+  <body>
+    <!-- ==========================================================
+         ENCABEZADO
+    =========================================================== -->
+
+    <header class="header">
+      <div class="header__logo">
+        <img src="./img/logo.png" alt="Biblioteca" />
+
+        <div>
+          <h1>Manual de las Runas de Estilo</h1>
+
+          <p>Biblioteca Perdida de Lady Elaydren</p>
+        </div>
+      </div>
+
+      <div class="header__house">Casa Cannith</div>
+    </header>
+
+    <!-- ==========================================================
+         CONTENIDO PRINCIPAL
+    =========================================================== -->
+
+    <main>
+      <!-- ==========================================================
+             POSITION
+        =========================================================== -->
+
+      <section class="bloque">
+        <aside class="teoria">
+          <div class="numero azul">01</div>
+
+          <h2>POSITION</h2>
+
+          <hr />
+
+          <p>
+            Permite posicionar elementos de forma precisa en relación al flujo
+            normal del documento y a otros elementos.
+          </p>
+
+          <p>
+            Es ideal para superponer capas, crear efectos visuales y ubicar
+            elementos en lugares específicos.
+          </p>
+
+          <h3>Propiedades clave</h3>
+
+          <ul class="etiquetas">
+            <li>position</li>
+
+            <li>top</li>
+
+            <li>right</li>
+
+            <li>bottom</li>
+
+            <li>left</li>
+
+            <li>z-index</li>
+          </ul>
+        </aside>
+
+        <!-- TARJETA -->
+
+        <article class="card position-card">
+          <span class="badge"> Nivel 27 </span>
+
+          <img src="./img/centinela.jpg" alt="Centinela Forjado" />
+
+          <section class="contenido">
+            <header>
+              <h2>Centinela Forjado</h2>
+
+              <p>Guardianes de los Engranajes</p>
+            </header>
+
+            <p>
+              Unidad forjada para custodiar los secretos de la Casa Cannith. Su
+              armadura se adapta al entorno y nunca descansa.
+            </p>
+
+            <section class="stats">
+              <div>
+                <h4>HP</h4>
+
+                <p>180</p>
+              </div>
+
+              <div>
+                <h4>ATQ</h4>
+
+                <p>48</p>
+              </div>
+
+              <div>
+                <h4>DEF</h4>
+
+                <p>35</p>
+              </div>
+
+              <div>
+                <h4>VEL</h4>
+
+                <p>22</p>
+              </div>
+            </section>
+
+            <section class="habilidad">
+              <h4>Habilidad</h4>
+
+              <p>
+                Protección Arcana. Crea un escudo que absorbe daño durante tres
+                turnos.
+              </p>
+            </section>
+          </section>
+        </article>
+      </section>
+
+      <!-- ==========================================================
+             FLEXBOX
+        =========================================================== -->
+
+      <section class="bloque">
+        <aside class="teoria">
+          <div class="numero verde">02</div>
+
+          <h2>FLEXBOX</h2>
+
+          <hr />
+
+          <p>
+            Diseñado para distribuir elementos en una dimensión (fila o
+            columna).
+          </p>
+
+          <p>
+            Permite alinear, justificar y distribuir elementos de manera
+            eficiente incluso si cambian de tamaño.
+          </p>
+
+          <h3>Propiedades clave</h3>
+
+          <ul class="etiquetas">
+            <li>display:flex</li>
+
+            <li>flex-direction</li>
+
+            <li>justify-content</li>
+
+            <li>align-items</li>
+
+            <li>gap</li>
+
+            <li>flex-wrap</li>
+          </ul>
+        </aside>
+
+        <!-- TARJETA -->
+
+        <article class="card flex-card">
+          <img src="./img/goblin.jpg" alt="Goblin de Chatarra" />
+
+          <section class="contenido">
+            <header>
+              <h2>Goblin de Chatarra</h2>
+
+              <p>Exploradores de desechos</p>
+            </header>
+
+            <p>
+              Criaturas rápidas que ensamblan piezas al azar para sobrevivir
+              dentro de los túneles de los Engranajes.
+            </p>
+
+            <section class="stats">
+              <div>
+                <h4>HP</h4>
+
+                <p>95</p>
+              </div>
+
+              <div>
+                <h4>ATQ</h4>
+
+                <p>28</p>
+              </div>
+
+              <div>
+                <h4>DEF</h4>
+
+                <p>18</p>
+              </div>
+
+              <div>
+                <h4>VEL</h4>
+
+                <p>40</p>
+              </div>
+            </section>
+
+            <section class="habilidad">
+              <h4>Habilidades</h4>
+
+              <ul>
+                <li>Arreglo improvisado.</li>
+
+                <li>Lanzamiento de chatarra.</li>
+              </ul>
+            </section>
+          </section>
+        </article>
+      </section>
+
+      <!-- ==========================================================
+             GRID
+        =========================================================== -->
+
+      <section class="bloque">
+        <aside class="teoria">
+          <div class="numero violeta">03</div>
+
+          <h2>GRID</h2>
+
+          <hr />
+
+          <p>Diseñado para organizar elementos en filas y columnas.</p>
+
+          <p>
+            Ideal para construir interfaces complejas donde varias secciones
+            necesitan alinearse simultáneamente.
+          </p>
+
+          <h3>Propiedades clave</h3>
+
+          <ul class="etiquetas">
+            <li>display:grid</li>
+
+            <li>grid-template-columns</li>
+
+            <li>grid-template-rows</li>
+
+            <li>gap</li>
+
+            <li>justify-items</li>
+
+            <li>align-items</li>
+          </ul>
+        </aside>
+
+        <!-- TARJETA -->
+
+        <article class="card grid-card">
+          <header class="titulo">
+            <h2>Matriz Génesis</h2>
+
+            <p>Núcleo de creación arcana</p>
+          </header>
+
+          <img src="./img/matriz.jpg" alt="Matriz Génesis" />
+
+          <section class="descripcion">
+            <p>
+              Antigua matriz utilizada por los maestros de Cannith para diseñar
+              y dar forma a nuevas creaciones.
+            </p>
+          </section>
+
+          <section class="estadisticas">
+            <h3>Estadísticas</h3>
+
+            <ul>
+              <li>HP: 250</li>
+
+              <li>ATQ: 60</li>
+
+              <li>DEF: 40</li>
+
+              <li>VEL: 10</li>
+            </ul>
+          </section>
+
+          <section class="habilidades-grid">
+            <h3>Habilidades</h3>
+
+            <ul>
+              <li>Descarga Arcana.</li>
+
+              <li>Regeneración del Núcleo.</li>
+            </ul>
+          </section>
+
+          <section class="info">
+            <h3>Información</h3>
+
+            <p>Tipo: Artefacto</p>
+
+            <p>Afinidad: Arcano</p>
+
+            <p>Rareza: Legendaria</p>
+
+            <p>Origen: Desconocido</p>
+          </section>
+        </article>
+      </section>
+    </main>
+
+    <!-- ==========================================================
+         PIE DE PÁGINA
+    =========================================================== -->
+
+    <footer>
+      <p>
+        Funcionamiento de los Sistemas Digitales · Casa Cannith · Biblioteca
+        Perdida
+      </p>
+    </footer>
+  </body>
+</html>
